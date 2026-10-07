@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-size: 1vw;
+}
+.main{
+    background-color: white;
+    width: 60%;
+    height: auto;
+    margin: 5% 20%;
+    border-radius: 16px;
+    padding: 30px;
+}
+img{
+    width: 100%;
+    border-radius: 8px;
+}
+p{
+    color: hsl(30, 10%, 34%);
+}
+p, #list, #list2, ol{
+    font-family: cursive;
+}
+h1{
+    margin: 15px 0;
+    font-family: "young serif";
+    color: hsl(24, 5%, 18%);
+}
+#list{
+    background-color: hsl(330, 100%, 98%);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+#list li::marker{
+    color: hsl(332, 51%, 32%);
+}
+li{
+    list-style-position:inside;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+.span1{
+    color: hsl(24, 5%, 18%);
+    font-weight: bold;
+}
+.span2, #list2{
+    color: hsl(30, 10%, 34%);
+}
+h3{
+    color: hsl(332, 51%, 32%);
+}
+h2{
+    margin: 20px 0;
+    font-family: "young serif";
+    color: hsl(14, 45%, 36%);
+}
+hr{
+    color: hsl(0, 0%, 46%);
+    margin: 25px 0;
+}
+#list2 li::marker, ol li::marker{
+    color: hsl(14, 45%, 36%);
+}
+table{
+    border-collapse: collapse;
+    font-family: cursive;
+}
+tr:not(:last-child) td {
+  border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+td{
+    padding: 1vw 0 1vw 1vw;
+    color: hsl(30, 10%, 34%);
+}
+td:nth-child(2){
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    padding-left: 27vw;
+    padding-right: 10vw;
+}
+@media screen and (max-width:550px){
+    body{
+        font-size: 4vw;
+        background-color: white;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        height: auto;
+    }
+    img{
+        border-radius: 0;
+        display: block;
+    }
+    .responsive{
+        padding: 25px;
+    }
+}
